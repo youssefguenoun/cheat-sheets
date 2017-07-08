@@ -4,6 +4,7 @@
 
 ### Follow the logs of a running Consul agent
 ``consul monitor -log-level trace``
+
 https://www.consul.io/docs/commands/monitor.html
 
 ### Healthcheck a service
