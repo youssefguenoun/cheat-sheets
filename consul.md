@@ -22,7 +22,7 @@
 ### Service Details
 ``http://172.17.4.101:8500/v1/catalog/service/hello-world``
 
-
+```
 [
     {
         "ID": "9fd8eb78-7b46-ceb0-6c2c-da991ddd6aa9",
@@ -67,6 +67,7 @@
         "ModifyIndex": 562
     }
 ]
+```
 
 ### List Datacenters
 
