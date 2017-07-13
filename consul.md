@@ -2,7 +2,7 @@
 ### List Services
 ``curl http://172.17.4.101:8500/v1/catalog/services``
 
-``
+```
 {
     "consul": [],
     "fabio": [],
@@ -18,7 +18,7 @@
         "http"
     ]
 }
-``
+```
 
 ### Deregister a service
 ``curl -XPUT 127.0.0.1:8500/v1/agent/service/deregister/<service-name>``
