@@ -1,3 +1,18 @@
+gcloud reference : https://cloud.google.com/sdk/gcloud/reference/
+
+### Set the default project
+
+- List the projects : 
+
+````
+gcloud projects list
+````
+- Set the default project 
+
+````
+gcloud config set project MyProject
+````
+
 
 ### Set a default  Compute Engine zone
 Example : Set the default zone to ``us-east1-d`` :
