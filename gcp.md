@@ -20,3 +20,11 @@ Example : Set the default zone to ``us-east1-d`` :
 ````
 gcloud config set compute/zone us-east1-d
 ````
+
+## Container Engine
+
+Shutdown all nodes
+
+````
+gcloud container clusters resize MyCluster --size=0
+````
