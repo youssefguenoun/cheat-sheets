@@ -21,7 +21,19 @@ Example : Set the default zone to ``us-east1-d`` :
 gcloud config set compute/zone us-east1-d
 ````
 
+### Ensure the default credentials are available local machine
+
+````
+gcloud auth application-default login
+````
+
 ## Container Engine
+
+List clusters
+
+````
+gcloud container clusters list
+````
 
 Shutdown all nodes
 
