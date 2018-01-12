@@ -12,7 +12,11 @@ gcloud projects list
 ````
 gcloud config set project MyProject
 ````
+- Get project's number
 
+````
+PROJECT_NUMBER=$(gcloud projects describe ${PROJECT_ID} --format='value(projectNumber)')
+````
 
 ### Set a default  Compute Engine zone
 Example : Set the default zone to ``us-east1-d`` :
