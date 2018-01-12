@@ -44,3 +44,30 @@ Shutdown all nodes
 ````
 gcloud container clusters resize MyCluster --size=0
 ````
+
+## KMS
+
+- Create keyring
+
+````
+gcloud kms keyrings create my-keyring --location=global
+````
+
+- Generate a new encryption key
+
+````
+gcloud kms keys create my-key \
+  --location=global \
+  --keyring=my-keyring \
+  --purpose=encryption
+````  
+- Encrypt a file using the ``my-keyring`` keyring and ``my-key`` encryption key
+
+````
+gcloud kms encrypt \
+  --plaintext-file my-file \
+  --ciphertext-file my-file.enc \
+  --location=global \
+  --keyring=my-keyring \
+  --key=my-key
+````
