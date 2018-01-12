@@ -38,6 +38,12 @@ gcloud config set compute/zone us-east1-d
 gcloud auth application-default login
 ````
 
+- Print access token
+
+````
+gcloud auth application-default print-access-token
+````
+
 ## Container Engine
 
 List clusters
