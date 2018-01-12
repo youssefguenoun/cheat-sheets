@@ -12,6 +12,13 @@ gcloud projects list
 ````
 gcloud config set project MyProject
 ````
+
+- Get project's id
+
+````
+PROJECT_ID=$(gcloud config get-value core/project)
+````
+
 - Get project's number
 
 ````
