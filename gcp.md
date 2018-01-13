@@ -64,6 +64,12 @@ gcloud container clusters resize MyCluster --size=0
 gcloud config get-value container/cluster
 ````
 
+- Generate kubeconfig file for ``MyCluster``
+
+````
+gcloud container clusters get-credentials MyCluster
+````
+
 ## KMS
 
 - Create keyring
