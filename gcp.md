@@ -46,16 +46,22 @@ gcloud auth application-default print-access-token
 
 ## Container Engine
 
-List clusters
+- List clusters
 
 ````
 gcloud container clusters list
 ````
 
-Shutdown all nodes
+- Shutdown all nodes
 
 ````
 gcloud container clusters resize MyCluster --size=0
+````
+
+- Get active cluster
+
+````
+gcloud config get-value container/cluster
 ````
 
 ## KMS
