@@ -1,5 +1,14 @@
 gcloud reference : https://cloud.google.com/sdk/gcloud/reference/
 
+
+## Accounts
+
+- Get active account's email
+
+````
+gcloud auth list --filter=status:ACTIVE --format="value(account)"
+````
+
 ### Set the default project
 
 - List the projects : 
